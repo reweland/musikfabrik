@@ -1,0 +1,55 @@
+/*!
+ * Bootstrap v4.5.2 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+ @at-root {
+  @-ms-viewport { width: device-width; } // stylelint-disable-line at-rule-no-vendor-prefix
+}
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 740px,
+  lg: 960px,
+  xl: 1170px
+);
+
+@import "../vendor/bootstrap/functions";
+@import "../vendor/bootstrap/variables";
+
+@import "../vendor/bootstrap/mixins/breakpoints";
+@import "../vendor/bootstrap/mixins/grid-framework";
+@import "../vendor/bootstrap/mixins/grid";
+
+@import "../vendor/bootstrap/grid";
+@import "../vendor/bootstrap/utilities/display";
+@import "../vendor/bootstrap/utilities/flex";

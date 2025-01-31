@@ -1,0 +1,51 @@
+.ie-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 10000;
+    background-color: white;
+    justify-content: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -ms-flex-align: center;
+    color: black;
+    display: none;
+
+    &.visible {
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+.ie-overlay-container {
+    max-width: 900px;
+}
+
+.ie-overlay-container h1 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.ie-overlay-container p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.ie-overlay-container a,
+.ie-overlay-container a:hover {
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.ie-overlay-close {
+    margin-top: 60px;
+}
+
+.ie-overlay-close p {
+    font-weight: 700;
+}

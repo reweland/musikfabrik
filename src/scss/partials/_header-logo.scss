@@ -1,0 +1,123 @@
+.header-logo {
+	position: absolute;
+	top: 15px;
+	left: $grid-gutter-width * 0.5;
+	z-index: 3;
+	width: 119px;
+	height: 54px;
+  transition: opacity 150ms linear, top 150ms ease-out;
+
+	svg {
+		width: 100%;
+		height: 100%;
+	}
+
+}
+
+html:not(.sticky) {
+
+  body.home {
+
+    .header-logo {
+      top: -80px;
+      opacity: 0;
+    }
+
+  }
+
+}
+
+.header-logo-large-wrapper {
+	display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+
+  .col {
+    @extend .col-12;
+  }
+}
+
+.header-logo-large {
+  width: 110px;
+  height: 208px;
+  position: absolute;
+  top: 20px;
+  left: $grid-gutter-width*0.5;
+  background-image: url(../media/musikfabrik-logo-large.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: opacity 150ms linear;
+}
+
+body.home {
+
+	.header-logo-large-wrapper {
+		display: block;
+	}
+
+}
+
+html.sticky {
+
+	body.home {
+
+		.header-logo-large {
+			opacity: 0;
+		}
+
+	}
+
+}
+
+@include media-breakpoint-down(md) {
+
+  html.nav-main-open {
+
+    .header-logo {
+      top: 15px !important;
+      opacity: 1 !important;
+      transition: opacity 150ms linear;
+    }
+
+    .header-logo-large-wrapper {
+      display: none;
+    }
+
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+
+  .header-logo {
+    width: 142px;
+    height: 64px;
+  }
+
+  .header-logo-large {
+    width: 140px;
+    height: 265px;
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+  .header-logo {
+    width: 167px;
+    height: 76px;
+  }
+
+}
+
+/* @include media-breakpoint-up(xl) {
+
+  .header-logo-large {
+    width: 200px;
+    height: 378px;
+  }
+
+} */

@@ -1,0 +1,31 @@
+.gradient-bgr {
+
+  .img-wrapper {
+    background: linear-gradient(to bottom, var(--color-primary-2) 0%,var(--color-primary-1) 100%);
+
+    img {
+      mix-blend-mode: screen;
+    }
+
+  }
+
+}
+
+.teaser-list-item {
+
+  &.gradient-border {
+
+    figure {
+      padding: 20px;
+      background: linear-gradient(to bottom, var(--color-primary-2) 0%,var(--color-primary-1) 100%);
+    }
+
+    figcaption {
+      bottom: 20px;
+      left: 20px;
+      right: 20px;
+    }
+
+  }
+
+}

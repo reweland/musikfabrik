@@ -1,0 +1,166 @@
+.publication-teaser {
+
+  img {
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    padding: 20px 0;
+    text-decoration: none;
+    border-bottom: 1px solid $color-grey-2;
+    transition: background-color 150ms linear;
+
+    &:hover {
+
+      .teaser-excerpt {
+        color: $color-white;
+      }
+
+    }
+
+  }
+
+  figure {
+    @extend.row;
+    margin-right: -($grid-gutter-width-mobile*0.5);
+    margin-left: -($grid-gutter-width-mobile*0.5);
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  .img-wrapper {
+    @extend .col-3;
+    padding-right: $grid-gutter-width-mobile*0.5;
+    padding-left: $grid-gutter-width-mobile*0.5;
+  }
+
+  figcaption {
+    @extend .col-9;
+    padding-right: $grid-gutter-width-mobile*0.5;
+    padding-left: $grid-gutter-width-mobile*0.5;
+    margin-top: 0;
+  }
+
+  .teaser-subtitle {
+    color: var(--color-primary-1);
+  }
+
+  .teaser-excerpt {
+    font-size: var(--font-size-lead);
+    line-height: var(--line-height-lead);
+    color: $color-grey-1;
+    transition: color 200ms linear;
+  }
+
+  &:last-child {
+
+    a {
+      border-bottom: none;
+    }
+
+  }
+
+}
+
+.publication-detail {
+  @extend .pb-large;
+
+  .col {
+    @extend .col-12;
+  }
+
+  .col-custom-1 {
+    @extend .col-md-6;
+  }
+
+  .col-custom-2 {
+    @extend .col-md-5;
+    @extend .offset-md-1;
+    order: -1;
+  }
+
+  .publication-title {
+    margin-bottom: 50px;
+
+    + p {
+      margin-bottom: 50px;
+    }
+
+  }
+
+  .publication-subtitle {
+    color: var(--color-primary-1);
+  }
+
+  .publication-excerpt {
+    margin-bottom: 40px;
+    font-size: var(--font-size-lead);
+    line-height: var(--line-height-lead);
+    color: $color-grey-1;
+
+    a {
+      color: $color-grey-1;
+
+      &:hover {
+        color: $color-white;
+      }
+
+    }
+
+  }
+
+  img {
+    width: 100%;
+  }
+
+  audio {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .audio-title {
+    margin-top: -30px;
+    margin-bottom: 50px;
+  }
+
+}
+
+body.single-mufa_cd {
+
+  .publication-detail {
+
+    img {
+      max-width: 350px;
+    }
+
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+
+  .publication-teaser {
+
+    figure {
+      margin-right: -($grid-gutter-width*0.5);
+      margin-left: -($grid-gutter-width*0.5);
+    }
+
+    .img-wrapper,
+    figcaption {
+      padding-right: $grid-gutter-width*0.5;
+      padding-left: $grid-gutter-width*0.5;
+    }
+
+  }
+
+  .publication-detail {
+
+    .col-custom-2 {
+      order: 0;
+    }
+
+  }
+
+}

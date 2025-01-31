@@ -1,0 +1,154 @@
+.fancybox-bg {
+  background-color: $color-black;
+}
+
+.fancybox-infobar {
+  display: none;
+}
+
+.fancybox-slide--image {
+  padding: 10px;
+}
+
+.fancybox-toolbar {
+  top: 10px;
+  right: 10px;
+}
+
+.fancybox-button--close {
+   width: 40px;
+   height: 40px;
+   color: $color-white;
+   opacity: 1;
+   background-color: $color-black;
+
+   &:hover {
+      color: $color-white;
+   }
+
+}
+
+.fancybox-navigation {
+
+   .fancybox-button {
+      background: none;
+
+      div {
+         width: 40px;
+         height: 40px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: absolute;
+         top: 50%;
+         margin-top: -20px;
+         padding: 0;
+         color: $color-white;
+         background-color: $color-black;
+         transition: color 100ms linear;
+      }
+
+      svg {
+         width: 26px;
+         height: 26px;
+      }
+
+      &:hover {
+
+         div {
+            color: $color-white;
+         }
+
+      }
+
+      &:disabled {
+
+         div {
+            color: $color-white;
+            opacity: 0.5;
+         }
+
+      }
+
+   }
+
+   .fancybox-button--arrow_left {
+      left: 10px;
+      padding: 0;
+
+      div {
+         left: 0;
+      }
+
+   }
+
+   .fancybox-button--arrow_right {
+      right: 10px;
+      padding: 0;
+
+      div {
+         right: 0;
+      }
+
+   }
+
+}
+
+.fancybox-caption {
+   font-size: 16px;
+   color: $color-white;
+   background: transparent;
+
+   p {
+      margin-bottom: 0;
+   }
+
+}
+
+.fancybox-content {
+   background-color: $color-black;
+}
+
+.fancybox-is-open {
+   .fancybox-bg {
+     opacity: 1;
+   }
+}
+
+.fancybox-slide--html {
+   padding: 0;
+}
+
+#center.fancybox-content {
+   padding: 75px 0;
+}
+
+@include media-breakpoint-up(md) {
+
+   .fancybox-slide--image {
+      padding: 50px;
+    }
+
+   .fancybox-toolbar {
+     top: 20px;
+     right: 20px;
+   }
+
+   .fancybox-button--close {
+      width: 50px;
+      height: 50px;
+   }
+
+   .fancybox-navigation {
+
+      .fancybox-button--arrow_left {
+         left: 20px;
+      }
+
+      .fancybox-button--arrow_right {
+         right: 20px;
+      }
+
+   }
+
+}

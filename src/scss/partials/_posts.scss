@@ -1,0 +1,141 @@
+.post-teaser {
+  @extend .col-md-6;
+  @extend .col-lg-4;
+
+  a {
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+
+      img {
+        transform: scale(1.05);
+      }
+
+    }
+
+  }
+
+  figcaption {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-right: -($grid-gutter-width-mobile*0.5);
+    margin-left: -($grid-gutter-width-mobile*0.5);
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .teaser-date {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 80px;
+    flex-basis: 80px;
+    padding-right: $grid-gutter-width-mobile*0.5;
+    padding-left: $grid-gutter-width-mobile*0.5;
+    font-family: 'DiamondsBold';
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--color-primary-1);
+
+    span {
+      display: block;
+    }
+
+  }
+
+  .teaser-title {
+    @extend .col;
+    padding-right: $grid-gutter-width-mobile*0.5;
+    padding-left: $grid-gutter-width-mobile*0.5;
+  }
+
+  .teaser-excerpt {
+    @extend .col-12;
+    padding-right: $grid-gutter-width-mobile*0.5;
+    padding-left: $grid-gutter-width-mobile*0.5;
+    font-size: var(--font-size-lead);
+    line-height: var(--line-height-lead);
+    text-align: right;
+  }
+
+  .img-wrapper {
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    transition-property: transform, opacity;
+    transition-duration: 1.5s;
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+  }
+
+}
+
+.posts-digital {
+
+  .post-teaser {
+
+    .teaser-excerpt {
+      text-align: left;
+    }
+
+  }
+
+}
+
+.post-header {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto;
+
+  h5 {
+    color: var(--color-primary-1);
+  }
+
+}
+
+.post-footer {
+  @include reset-list;
+  color: $color-grey-1;
+  border-top: 1px solid $color-grey-1;
+  padding-top: 30px;
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  a {
+    color: $color-grey-1;
+    /* text-decoration: none; */
+
+    &:hover {
+      color: $color-black;
+    }
+
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+  .post-footer {
+    display: flex;
+
+    li {
+      width: 33.333333333%;
+      padding-right: $grid-gutter-width;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+    }
+
+  }
+
+}

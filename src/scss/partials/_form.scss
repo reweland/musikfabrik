@@ -1,0 +1,100 @@
+form {
+
+  .form-row {
+    margin-bottom: 35px;
+  }
+
+  label {
+    display: none;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+    width: 100%;
+    padding: 0 0 12px 0;
+    margin: 0;
+    color: $color-black;
+    display: block;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $color-grey-1;
+    transition: border-color 100ms linear;
+    background-color: $color-white;
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+
+    &.wpcf7-not-valid {
+      border-color: var(--color-primary-1);
+    }
+
+  }
+
+  ::placeholder {
+    color: $color-black;
+  }
+
+  input[type='submit'] {
+    @extend .btn-cta-small;
+    cursor: pointer;
+    transition: color 100ms linear, background-color 100ms linear, opacity 250ms linear;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+  }
+
+}
+
+.nl-form {
+
+  label {
+    display: block;
+  }
+
+}
+
+.wpcf7,
+.post-password-form {
+
+  label {
+    display: block;
+  }
+
+  input[type='submit'] {
+    @extend .btn-cta-small;
+    cursor: pointer;
+    transition: color 100ms linear, border 100ms linear, background 100ms linear;
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+
+  }
+
+}
+
+.bgr-black {
+
+  form {
+
+    input[type='text'],
+    input[type='email'],
+    input[type='password'] {
+      color: $color-white;
+      border-bottom: 1px solid $color-grey-1;
+      background-color: $color-black;
+    }
+
+    ::placeholder {
+      color: $color-white;
+    }
+
+  }
+
+}

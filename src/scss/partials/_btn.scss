@@ -1,0 +1,48 @@
+.btn-cta {
+  display: block;
+  padding: 8px 25px 13px 25px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  font-family: 'DiamondsBold';
+  text-transform: uppercase;
+  font-size: 20px;
+  color: $color-black;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  background-color: var(--color-primary-1);
+
+  &:hover {
+    color: $color-white;
+    background-color: var(--color-primary-2);
+  }
+
+}
+
+.btn-cta-small {
+  @extend .btn-cta;
+  padding: 5px 15px 8px 15px;
+  font-size: 17px;
+}
+
+.align-right {
+
+  .btn-cta {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+
+  .btn-cta {
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  .btn-cta-small {
+    font-size: 17px;
+  }
+
+}

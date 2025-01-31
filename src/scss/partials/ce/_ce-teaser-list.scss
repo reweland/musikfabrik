@@ -1,0 +1,172 @@
+.teaser-list-item {
+  @extend .col-md-6;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    transition-property: transform, opacity;
+    transition-duration: 1.5s;
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+  }
+
+  a {
+    display: block;
+
+    &:hover {
+
+      img {
+        transform: scale(1.05);
+      }
+
+    }
+
+  }
+
+  .img-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  figure {
+    position: relative;
+    margin-bottom: 0;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 25px 35px;
+    text-align: right;
+    color: $color-white;
+  }
+
+  .teaser-title {
+    margin: 0;
+    line-height: 34px;
+
+    .bar-style {
+      padding-bottom: 10px;
+    }
+
+  }
+
+  .teaser-subtitle {
+    margin: 0;
+    padding-top: 10px;
+    font-size: var(--font-size-lead);
+
+    .bar-style {
+      padding-top: 6px;
+    }
+
+  }
+
+}
+
+.teaser-list-home {
+  @extend .row;
+
+  .teaser-list-item {
+    @extend .col-md-12;
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+
+  .teaser-list-item {
+    margin-bottom: $grid-gutter-width;
+  }
+
+  .teaser-list-home {
+    height: 100%;
+
+    .teaser-list-item {
+      height: 50%;
+      padding-bottom: 30px;
+      margin-bottom: 0;
+
+      a {
+        height: 100%;
+        background-color: #000fff;
+      }
+
+      figure {
+        height: 100%;
+      }
+
+      .img-wrapper {
+        height: 100%;
+        position: relative;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+      }
+
+    }
+
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+  .teaser-list-item {
+
+    figcaption {
+      padding: 35px 45px;
+    }
+
+    .teaser-title {
+      line-height: 44px;
+
+      .bar-style {
+        padding-top: 0px;
+      }
+
+    }
+
+    .teaser-subtitle {
+      padding-top: 8px;
+    }
+
+    &.gradient-border {
+
+      figure {
+        padding: 25px;
+      }
+
+      figcaption {
+        bottom: 25px;
+        left: 25px;
+        right: 25px;
+      }
+
+    }
+
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+  .teaser-list-item {
+
+    .teaser-subtitle {
+      max-width: 75%;
+      margin-left: auto;
+    }
+
+  }
+
+}

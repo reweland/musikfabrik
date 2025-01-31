@@ -1,0 +1,72 @@
+.calendar-detail {
+
+  .col {
+    @extend .col-12;
+  }
+
+  .col-custom-1 {
+    @extend .col-md-8;
+  }
+
+  .col-custom-2 {
+    @extend .col-md-4;
+  }
+
+}
+
+.calendar-detail-table {
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+
+  tr {
+    border-top: 1px solid $color-grey-2;
+
+    &:last-child {
+      border-bottom: 1px solid $color-grey-2;
+    }
+
+  }
+
+  td {
+    padding: 13px 8px 8px 0;
+    white-space: nowrap;
+
+    &:last-child {
+      white-space: normal;
+    }
+
+  }
+
+  .calendar-event-type,
+  .calendar-event-export {
+    font-family: 'DiamondsBold';
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0 8px 4px 8px;
+    margin: 0 5px 5px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-black;
+    text-decoration: none;
+    background-color: var(--color-primary-1);
+  }
+
+  .calendar-event-export {
+
+    &:hover {
+      background-color: var(--color-primary-2);
+    }
+
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+  .calendar-detail-table {
+    font-size: var(--font-size-copy);
+    line-height: var(--line-height-copy);
+  }
+
+}

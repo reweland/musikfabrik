@@ -1,0 +1,155 @@
+#footer {
+  @extend .pt-medium;
+  @extend .pb-medium;
+  flex-shrink: 0;
+  font-family: 'DiamondsBold';
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-white;
+  background-color: $color-black;
+
+  .col {
+    @extend .col-12;
+  }
+
+  .col-custom-1 {
+    @extend .col-md-6;
+    @extend .col-lg-4;
+  }
+
+  .col-custom-2 {
+    @extend .col-md-6;
+    @extend .col-lg-4;
+  }
+
+  .col-custom-3 {
+    @extend .col-md-12;
+    @extend .col-lg-4;
+  }
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      opacity: .7;
+    }
+
+  }
+
+  .nav-footer {
+    @include reset-list;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      padding: 0 10px;
+      white-space: nowrap;
+    }
+
+  }
+
+  .nav-social {
+    @include reset-list;
+    display: flex;
+    justify-content: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-bottom: var(--line-height-copy);
+
+    li {
+      margin: 0 10px;
+    }
+
+    svg {
+      width: 36px;
+      height: 36px;
+    }
+
+    a {
+      display: block;
+    }
+
+  }
+
+  address {
+    font-size: 18px;
+    font-style: normal;
+    padding-bottom: var(--line-height-copy);
+  }
+
+  .footnote {
+    display: none;
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+
+  #footer {
+    text-align: left;
+
+    .col-custom-1 {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: right;
+    }
+
+    .col-custom-2 {
+      order: 1;
+    }
+
+    .col-custom-3 {
+      order: 3;
+    }
+
+    .nav-footer {
+      margin-top: var(--line-height-copy);
+     display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-social {
+      justify-content: flex-end;
+      padding-bottom: 0;
+    }
+
+    address {
+      padding-bottom: 0;
+    }
+
+    .footnote {
+      display: block;
+    }
+
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+  #footer {
+
+    .col-custom-1 {
+      order: 3;
+    }
+
+    .col-custom-3 {
+      order: 2;
+    }
+
+    .nav-footer {
+      margin-top: 0;
+      display: block;
+    }
+
+  }
+
+}

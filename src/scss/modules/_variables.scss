@@ -1,0 +1,126 @@
+/* css variables ------------------------- */
+
+:root {
+  --header-height: 85px;
+  --center-top-padding: 85px;
+  --center-bottom-padding: 0;
+
+
+  --font-size-copy: 16px;
+  --line-height-copy: 24px;
+
+  --font-size-h1: 32px;
+  --line-height-h1: 40px;
+  --margin-bottom-h1: 30px;
+
+  --font-size-h2: 28px;
+  --line-height-h2: 28px;
+  --margin-bottom-h2: 24px;
+
+  --font-size-h3: 24px;
+  --line-height-h3: 24px;
+  --margin-bottom-h3: 24px;
+
+  --font-size-h4: 18px;
+  --line-height-h4: 26px;
+  --margin-bottom-h4: 24px;
+
+  --font-size-h6: 14px;
+  --line-height-h6: 20px;
+  --margin-bottom-h6: 15px;
+
+  --font-size-lead: 16px;
+  --line-height-lead: 24px;
+
+  --font-size-figcaption: 16px;
+  --line-height-figcaption: 24px;
+
+  --padding-top-sm: 15px;
+  --padding-bottom-sm: 15px;
+  --padding-top-m: 30px;
+  --padding-bottom-m: 15px;
+  --padding-top-l: 45px;
+  --padding-bottom-l: 30px;
+  --padding-top-xl: 60px;
+  --padding-bottom-xl: 45px;
+
+  --vh-offset: 0px;
+
+  --color-primary-1: #c9ce6d;
+  --color-primary-2: #523256;
+}
+
+body.home {
+  --center-top-padding: 300px;
+}
+
+@include media-breakpoint-up(md) {
+
+  :root {
+    --header-height: 95px;
+    --center-top-padding: 95px;
+
+    --font-size-h1: 40px;
+    --line-height-h1: 48px;
+  }
+
+  body.home {
+    --center-top-padding: 360px;
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+  :root {
+    --header-height: 106px;
+    --center-top-padding: 105px;
+
+    --font-size-h1: 54px;
+    --line-height-h1: 64px;
+    --margin-bottom-h1: 50px;
+
+    --font-size-h2: 40px;
+    --line-height-h2: 40px;
+
+    --font-size-h3: 30px;
+    --line-height-h3: 30px;
+
+    --font-size-h4: 20px;
+    --line-height-h4: 28px;
+
+    --font-size-lead: 18px;
+    --line-height-lead: 26px;
+
+    --padding-top-sm: 30px;
+    --padding-bottom-sm: 30px;
+    --padding-top-m: 45px;
+    --padding-bottom-m: 30px;
+    --padding-top-l: 60px;
+    --padding-bottom-l: 60px;
+    --padding-top-xl: 75px;
+    --padding-bottom-xl: 75px;
+
+  }
+
+}
+
+@include media-breakpoint-up(xl) {
+
+  /* body.home {
+    --center-top-padding: 490px;
+  } */
+
+}
+
+/* grid ----------------------------------- */
+
+$grid-gutter-width-mobile: 16px;
+
+/* colors --------------------------------- */
+
+$color-white: #fff;
+$color-black: #000;
+$color-grey-1: #888;
+$color-grey-2: #444;
+$color-grey-3: #1a1a1a;

@@ -1,0 +1,47 @@
+@import "modules/bootstrap-custom";
+@import "modules/bootstrap-overwrites";
+@import "vendor/normalize";
+@import "vendor/swiper-bundle";
+@import "vendor/fancybox";
+
+@import "modules/variables";
+@import "modules/mixins";
+
+@import "partials/fonts";
+@import "partials/atoms";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/center";
+@import "partials/header-navigation";
+@import "partials/header-logo";
+@import "partials/header-controls";
+@import "partials/menu-overlay";
+@import "partials/responsive-video";
+@import "partials/toggle-btn-burger";
+@import "partials/color-modes";
+@import "partials/gradient";
+@import "partials/calendar-overview";
+@import "partials/calendar-detail";
+@import "partials/publications";
+@import "partials/posts";
+@import "partials/pagination";
+@import "partials/filter";
+@import "partials/btn";
+@import "partials/borderless-img";
+@import "partials/fancybox-custom";
+@import "partials/form";
+@import "partials/searchform";
+@import "partials/search-overlay";
+@import "partials/img-slider";
+@import "partials/gallery";
+@import "partials/ie11";
+
+@import "partials/ce/ce";
+@import "partials/ce/ce-onecol";
+@import "partials/ce/ce-twocol";
+@import "partials/ce/ce-threecol";
+@import "partials/ce/ce-twocol-img-borderless";
+@import "partials/ce/ce-hero";
+@import "partials/ce/ce-accordion";
+@import "partials/ce/ce-team";
+@import "partials/ce/ce-teaser-list";

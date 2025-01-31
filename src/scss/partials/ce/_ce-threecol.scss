@@ -1,0 +1,55 @@
+.ce-threecol {
+
+  .col {
+    @extend .col-12;
+    @extend .col-md-4;
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+  .ce-threecol {
+
+    .row {
+      justify-content: center;
+    }
+
+    &.narrow-2 {
+
+      .col {
+        max-width: 27.777777777%;
+        flex-basis: 27.777777777%;
+      }
+
+    }
+
+  }
+
+}
+
+@include media-breakpoint-up(xl) {
+
+  .ce-threecol {
+
+    &.narrow-1 {
+
+      .col {
+        max-width: 27.777777777%;
+        flex-basis: 27.777777777%;
+      }
+
+    }
+
+    &.narrow-2 {
+
+      .col {
+        max-width: 22.222222222%;
+        flex-basis: 22.222222222%;
+      }
+
+    }
+
+  }
+
+}

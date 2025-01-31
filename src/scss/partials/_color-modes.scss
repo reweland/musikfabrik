@@ -1,0 +1,100 @@
+.bgr-black {
+  color: $color-white;
+  background-color: $color-black;
+
+  a {
+    color: $color-white;
+  }
+
+  .btn-cta {
+    color: $color-black;
+
+    &:hover {
+      color: $color-black;
+    }
+
+  }
+
+  ul {
+    li {
+      &:before {
+        background-color: $color-white;
+      }
+    }
+  }
+
+  hr {
+    border-color: $color-white;
+  }
+
+  .post-footer a:hover {
+    color: $color-white;
+  }
+
+}
+
+.bgr-white {
+  color: $color-black;
+  background-color: $color-white;
+
+  a {
+    color: $color-black;
+  }
+
+  .btn-cta {
+    color: $color-white;
+
+    &:hover {
+      color: $color-white;
+    }
+
+  }
+
+  ul {
+    li {
+      &:before {
+        background-color: $color-black;
+      }
+    }
+  }
+
+  hr {
+    border-color: $color-black;
+  }
+
+}
+
+.bgr-yellow {
+  background-color: var(--color-primary-1);
+  color: $color-black;
+
+  a {
+    color: $color-black;
+  }
+
+  ul {
+    li {
+      &:before {
+        background-color: $color-black;
+      }
+    }
+  }
+
+  hr {
+    border-color: $color-black;
+  }
+
+  .btn-cta {
+    background-color: $color-black;
+    color: var(--color-primary-1);
+  }
+
+  .post-teaser {
+
+    .teaser-date {
+      color: var(--color-primary-2);
+    }
+
+  }
+
+}

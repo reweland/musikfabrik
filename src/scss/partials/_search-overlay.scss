@@ -1,0 +1,31 @@
+#search-overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  &.fancybox-content {
+    padding: 0;
+  }
+
+  .search-overlay-inner {
+    width: 100%;
+    height:100%;
+    padding: 0 $grid-gutter-width;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .searchform {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    input[type='text'] {
+      @extend .lead;
+      width: 100%;
+    }
+
+  }
+
+}

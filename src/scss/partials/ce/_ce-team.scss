@@ -1,0 +1,20 @@
+.ce-team {
+
+  .team-member {
+    @extend .col-12;
+    @extend .col-lg-6;
+  }
+
+}
+
+@include media-breakpoint-up(md) {
+
+  .ce-team {
+
+    figure {
+      margin-bottom: 40px;
+    }
+
+  }
+
+}

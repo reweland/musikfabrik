@@ -1,0 +1,61 @@
+.pagination {
+	@extend .pt-medium;
+	@extend .pb-medium;
+
+	.nav-links {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		padding: 5px 10px 8px 10px;
+		margin-bottom: 20px;
+		font-family: 'DiamondsBold';
+		font-size: var(--font-size-h6);
+  	text-transform: uppercase;
+		color: $color-grey-1;
+		background-color: $color-grey-3;
+
+		&:hover {
+			color: $color-black;
+			background-color: var(--color-primary-1);
+		}
+
+	}
+
+}
+
+.pagination-posts {
+
+	.nav-links {
+		height: 60px;
+		position: relative;
+	}
+
+	.nav-previous {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.nav-next {
+		
+	}
+
+}
+
+@include media-breakpoint-up(md) {
+
+	.pagination {
+
+		a {
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+
+	}
+
+}

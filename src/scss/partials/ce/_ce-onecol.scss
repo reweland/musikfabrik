@@ -1,0 +1,33 @@
+.ce-onecol,
+.ce-headline,
+.ce-accordion {
+
+  .col {
+    @extend .col-12;
+  }
+
+  &.layout-6 {
+
+    .col {
+      @extend .col-lg-6;
+    }
+
+  }
+
+  &.layout-8 {
+
+    .col {
+      @extend .col-lg-8;
+    }
+
+  }
+
+  &.layout-9 {
+
+    .col {
+      @extend .col-lg-9;
+    }
+
+  }
+
+}
