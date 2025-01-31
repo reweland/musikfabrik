@@ -6,7 +6,7 @@ $year = get_query_var( 'event-year' );
 if ( $type || $year ) {
     $events = \Beck\Mufa\Event::get_events_by_filters( $type, $year );
 } else {
-	$events = \Beck\Mufa\Event::get_upcoming_events();
+	$events = \Beck\Mufa\Event::get_upcoming_events(100);
 }
 
 /*if ( $type = get_query_var( 'event-type' ) ) {
